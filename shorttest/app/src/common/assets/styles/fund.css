@@ -1,0 +1,45 @@
+.fund {
+  display: block;
+  border: 1px solid #ddd;
+  box-shadow: 0 10px 15px -10px #777;
+  min-height: 100px;
+  width: 100%;
+  margin: 0 0 15px 0;
+  padding: 5px;
+}
+
+.fund .fund-header {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.fund .fund-header b {
+  display: block;
+  margin-top: 4px;
+}
+
+.fund .fund-header .title {
+  font-size: 1.2em;
+  color: #2a6496;
+  font-weight: bold;
+}
+
+.fund .fund-header .launch-date {
+  color: #777;
+}
+
+.fund .fund-row {
+  padding: 5px;
+}
+
+.fund .fund-row:nth-child(odd) {
+  background-color: #eee;
+}
+
+.fund .fund-row span.fund-label {
+  display: inline-block;
+  font-weight: bold;
+  min-width: 200px;
+  text-align: left;
+}

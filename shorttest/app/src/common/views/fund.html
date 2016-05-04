@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="src/common/assets/styles/fund.css">
+<div ng-controller="FundCtrl">
+  <div class="row fund" ng-model="fund">
+    <div class="fund-header">
+      <div class="title">{{fund["Fund Name"]}}</div>
+    </div>
+    <div class="content">
+      <div class="fund-row"><span class="fund-label">Fund Size:</span><span>{{fund["Fund Size"] | currency:'' | defaultValue}}</span></div>
+      <div class="fund-row"><span class="fund-label">Launch Date:</span><span>{{fund["Launch Date"] | dateFormat | defaultValue}}</span></div>
+      <div class="fund-row"><span class="fund-label">Ticker Symbol:</span><span>{{fund["Ticker Symbol"] | defaultValue}}</span></div>
+      <div class="fund-row"><span class="fund-label">Sector:</span><span>{{fund["Sector"] | defaultValue}}</span></div>
+      <div class="fund-row"><span class="fund-label">Asset Class:</span><span>{{fund["Asset Class"] | defaultValue}}</span></div>
+      <div class="fund-row"><span class="fund-label">Investment Style:</span><span>{{fund["Investment Style"] | defaultValue}}</span></div>
+    </div>
+  </div>
+</div>
+
